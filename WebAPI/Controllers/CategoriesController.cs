@@ -32,7 +32,6 @@ namespace WebAPI.Controllers
         [HttpPost]
         public IActionResult Createcategory(Category category)
         {
-
             context.Categories.Add(category);
             context.SaveChanges();
             return Ok("Category added successfully.");
