@@ -12,7 +12,7 @@ namespace WebAPI.Context
                 .AddJsonFile("connection.json")
                 .Build();
 
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            var connectionString = configuration.GetConnectionString("DbConnection");
 
             optionsBuilder.UseSqlServer(connectionString);
         }
