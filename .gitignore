@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Diğer geçici dosyalar
+*.log
+*.vscode/
+
+connection.json
