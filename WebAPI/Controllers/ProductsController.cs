@@ -85,7 +85,6 @@ namespace WebAPI.Controllers
         {
             var value = context.Products.Include(x => x.Category).ToList();
             return Ok(mapper.Map<List<ResultProductWithCategoryDto>>(value));
-
         }
 
     }
